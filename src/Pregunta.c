@@ -24,6 +24,6 @@ void cargarCSV (int id) {
 
 }
 
-void imprimirPregunta(int id) {
+void imprimirPregunta(Pregunta p) {
 	
 }
