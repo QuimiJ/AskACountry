@@ -15,6 +15,6 @@
 
     void cargarCSV(int id);
 
-    void imprimirPregunta(Pregunta p);
+    Pregunta imprimirPregunta(Pregunta p);
 
 #endif

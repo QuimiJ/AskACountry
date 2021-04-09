@@ -24,6 +24,19 @@ void cargarCSV (int id) {
 
 }
 
-void imprimirPregunta(Pregunta p) {
-	
+Pregunta imprimirPregunta(Pregunta p) {
+	if (p != NULL) {
+		printf("P: %s", p.pregunta);
+		
+		char r = p.respuestas;
+		char pR*;
+		pR = strtok(r, ",");
+
+		for (i = 1; i < 4; i++) {
+			printf("%i. %s", i, pR);
+			pR = strtok(NULL, ",");
+		}
+	}
+
+	return p;
 }
