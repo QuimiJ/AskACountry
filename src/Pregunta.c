@@ -20,10 +20,10 @@ void escribirCSV (int id, char pregunta[50], char respuestas[300],
 	fclose(fPRespuestas);
 }
 
-void cargarCSV () {
+void cargarCSV (int id) {
 
 }
 
-Pregunta seleccionarPregunta() {
+void imprimirPregunta(int id) {
 	
 }
