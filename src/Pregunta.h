@@ -13,7 +13,7 @@
     void escribirCSV(int id, char pregunta[50], char respuestas[300],
     		char respuestaVerdadera[30], char dificultad[10], char tipo[10]);
 
-    void cargarCSV(int id);
+    Pregunta cargarCSV(int id);
 
     Pregunta imprimirPregunta(Pregunta p);
 

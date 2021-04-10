@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include "Pregunta.h"
 
 
@@ -20,22 +21,23 @@ void escribirCSV (int id, char pregunta[50], char respuestas[300],
 	fclose(fPRespuestas);
 }
 
-void cargarCSV (int id) {
+Pregunta cargarCSV (int id) {
+	Pregunta p;
 
+
+
+	return p;
 }
 
 Pregunta imprimirPregunta(Pregunta p) {
-	if (p != NULL) {
-		printf("P: %s", p.pregunta);
-		
-		char r = p.respuestas;
-		char pR*;
-		pR = strtok(r, ",");
+	printf("P: %s \n", p.pregunta);
 
-		for (i = 1; i < 4; i++) {
-			printf("%i. %s", i, pR);
-			pR = strtok(NULL, ",");
-		}
+	char *pR;
+	pR = strtok(p.respuestas, ",");
+
+	for (int i = 1; i < 4; i++) {
+		printf("%s\n", pR);
+		pR = strtok(NULL, ",");
 	}
 
 	return p;
