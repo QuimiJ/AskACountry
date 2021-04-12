@@ -1,6 +1,7 @@
 #ifndef PREGUNTA_H_
 #define PREGUNTA_H_
 
+
     typedef struct {
         int id;
         char pregunta[50];
