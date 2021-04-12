@@ -13,11 +13,11 @@ int main(void) {
 	pregunta.id = 1;
 	strcpy(pregunta.pregunta, "Cual es el monte mas grande del mundo?");
 	strcpy(pregunta.respuestas, "a. El Everest,b. El Mont Blanc,c. El Gorbea");
-	strcpy(pregunta.respuestaVerdadera, "El Everest");
 	strcpy(pregunta.dificultad, "Facil");
 	strcpy(pregunta.tipo, "Geografia");
+	pregunta.correcta = 1;
 
-	escribirCSV(pregunta.id, pregunta.pregunta, pregunta.respuestas, pregunta.respuestaVerdadera, pregunta.dificultad, pregunta.tipo);
+	escribirCSV(pregunta.id, pregunta.pregunta, pregunta.respuestas, pregunta.dificultad, pregunta.tipo, pregunta.correcta);
 
 	//Preguntas cargadas de los ficheros CSSV
 	//POR HACER

@@ -4,13 +4,11 @@
 #include "Pregunta.h"
 
 
-void escribirCSV (int id, char pregunta[50], char respuestas[300],
-    		char respuestaVerdadera[30], char dificultad[10], char tipo[10]) {
+void escribirCSV (int id, char pregunta[50], char respuestas[300], char dificultad[10], char tipo[10], int correcta) {
 	//Creacion o edicion de fichero .csv con una pregunta y sus respuestas
 	FILE *fPPreguntasYRespuestas;
 	fPPreguntasYRespuestas = fopen("PreguntasYRespuestas.csv", "a");
-	fprintf(fPPreguntasYRespuestas, "%d, %s, %s, %s, %d, %d, %s\n", id, pregunta, dificultad, tipo, id, 1, respuestaVerdadera);
-	fprintf(fPPreguntasYRespuestas, "%d, %s, %s, %s, %d, %d, %s\n", id, pregunta, dificultad, tipo, id, 0, respuestas);
+	fprintf(fPPreguntasYRespuestas, "%d, %s, %s, %s, %s, %d\n", id, pregunta, dificultad, tipo, respuestas, correcta);
 	fclose(fPPreguntasYRespuestas);
 }
 
