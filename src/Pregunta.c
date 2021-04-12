@@ -8,7 +8,7 @@ void escribirCSV (int id, char pregunta[50], char respuestas[300], char dificult
 	//Creacion o edicion de fichero .csv con una pregunta y sus respuestas
 	FILE *fPPreguntasYRespuestas;
 	fPPreguntasYRespuestas = fopen("PreguntasYRespuestas.csv", "a");
-	fprintf(fPPreguntasYRespuestas, "%d, %s, %s, %s, %s, %d\n", id, pregunta, dificultad, tipo, respuestas, correcta);
+	fprintf(fPPreguntasYRespuestas, "%d, %d, %s, %s, %s, %s\n", id, correcta, pregunta, dificultad, tipo, respuestas);
 	fclose(fPPreguntasYRespuestas);
 }
 
