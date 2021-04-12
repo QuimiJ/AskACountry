@@ -5,9 +5,9 @@
     typedef struct {
         int id;
         char pregunta[150];
-        char respuesta1[20];
-        char respuesta2[20];
-        char respuesta3[20];
+        char respuesta1[100];
+        char respuesta2[100];
+        char respuesta3[100];
         char dificultad[10];
         char tipo[10];
         int correcta;
