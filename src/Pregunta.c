@@ -4,7 +4,7 @@
 #include "Pregunta.h"
 
 
-void escribirCSV (int id, char pregunta[150], char respuestas1[20],char respuestas2[20], char respuestas3[20], char dificultad[10], char tipo[10], int correcta) {
+void escribirCSV (int id, char pregunta[150], char respuestas1[100],char respuestas2[100], char respuestas3[100], char dificultad[10], char tipo[10], int correcta) {
 	//Creacion o edicion de fichero .csv con una pregunta y sus respuestas
 	FILE *fPPreguntasYRespuestas;
 	fPPreguntasYRespuestas = fopen("PreguntasYRespuestas.csv", "a");
