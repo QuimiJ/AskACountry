@@ -4,7 +4,7 @@
 
     typedef struct {
         int id;
-        char pregunta[50];
+        char pregunta[150];
         char respuesta1[20];
         char respuesta2[20];
         char respuesta3[20];
